@@ -1,0 +1,21 @@
+{
+  "name": "frota-api",
+  "version": "0.1.0",
+  "description": "API do Gestao de Frota CCS — bridge entre o frontend e o Oracle Mega do cliente, com tenant central Postgres",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/jwt": "^9.1.0",
+    "fastify": "^5.4.0",
+    "pg": "^8.13.1"
+  }
+}
